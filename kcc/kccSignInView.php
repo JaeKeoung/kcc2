@@ -15,20 +15,36 @@ include 'kccSingin.php';
  $id=$_POST['ID'];
  $password=md5($_POST['Passward']);
  $password2=$_POST['pwd2'];
- $phoneNumber1=$_POST['PhoneNumber1'];
- $phoneNumber2=$_POST['PhoneNumber2'];
- $phoneNumber3=$_POST['PhoneNumber3'];
- $name=$_POST['name'];
- $address=$_POST['addr'];
- $sex=$_POST['sex'];
- $birthDay=$_POST['birthDay'];
- $email=$_POST['email'];
+ $phone1=$_POST['PhoneNumber1'];
+ $phone2=$_POST['PhoneNumber2'];
+ $phone3=$_POST['PhoneNumber3'];
+ $Cellphone=$_POST['CellphoneNumber1'];
+ $Cellphone=$_POST['CellphoneNumber2'];
+ $Cellphone=$_POST['CellphoneNumber3'];
+ $SMS=$_POST['SMS'];
+ $email=$_POST['EMail'];
+ $HANumber=$_POST['homePostNumber'];
+ $HAdress=$_POST['homeAdress'];
+ $HDadress=$_POST['homeDetailAdress'];
+ $HA1=$_POST['HomeAdress1'];
+ $HA2=$_POST['HomeAdress2'];
+ $DM=$_POST['DM'];
+ $CompanyN=$_POST['CompanyName'];
+ $Job=$_POST['JobKind'];
+ $JPosition=$_POST['Postion'];
+ $CPNumber=$_POST['companyPostNumber'];
+ $CAdress=$_POST['companyAdress'];
+ $CDAdress=$_POST['companyDetailAdress'];
+ $CA1=$_POST['CompanyAdress1'];
+ $CA2=$_POST['CompanyAdress2'];
+ //여기서부터
+ $id=$_POST['ID'];
  
- $sql = "insert into account_info (id, pwd, name, addr, sex, birthDay, email)";
- $sql = $sql. "values('$id','$password','$name','$address','$sex','$birthDay','$email')";
- if($mysqli->query($sql)){
-  echo 'success inserting';
- }else{
-  echo 'fail to insert sql';
- }
+// $sql = "insert into account_info (id, pwd, name, addr, sex, birthDay, email)";
+// $sql = $sql. "values('$id','$password','$name','$address','$sex','$birthDay','$email')";
+// if($mysqli->query($sql)){
+//  echo 'success inserting';
+// }else{
+//  echo 'fail to insert sql';
+// }
 ?>
