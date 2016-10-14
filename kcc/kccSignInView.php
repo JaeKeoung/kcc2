@@ -32,12 +32,16 @@ include 'kccSingin.php';
  $CompanyN=$_POST['CompanyName'];
  $Job=$_POST['JobKind'];
  $JPosition=$_POST['Postion'];
- $CPNumber=$_POST['companyPostNumber'];
+ $CPostNum=$_POST['companyPostNumber'];
  $CAdress=$_POST['companyAdress'];
  $CDAdress=$_POST['companyDetailAdress'];
  $CA1=$_POST['CompanyAdress1'];
  $CA2=$_POST['CompanyAdress2'];
  //여기서부터
+ $CPoneNum1=$_POST['CompanyNumber1'];
+ $CPoneNum2=$_POST['CompanyNumber2'];
+ $CPoneNum3=$_POST['CompanyNumber3'];
+ $id=$_POST['ID'];
  $id=$_POST['ID'];
  
 // $sql = "insert into account_info (id, pwd, name, addr, sex, birthDay, email)";
